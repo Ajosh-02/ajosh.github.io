@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vidyakul Coaching Classes — Classes 1 to 12 (All Boards)</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --soft-yellow: #FFF9E6;
+      /* light yellow */
+      --soft-purple: #F1EBFF;
+      /* light purple */
+      --off-white: #FBFBFA;
+      /* off white */
+      --accent: #6C4CE3;
+      /* deeper purple accent */
+      --muted: #6b6b6b;
+      --card-radius: 14px;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: var(--off-white);
+      color: #222
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, var(--soft-yellow), var(--soft-purple));
+      box-shadow: 0 6px 18px rgba(108, 76, 227, 0.06);
+    }
+
+    .navbar-brand strong {
+      color: var(--accent)
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(180deg, rgba(255, 249, 230, 0.9), rgba(241, 235, 255, 0.9));
+      border-radius: 18px;
+      padding: 2.5rem
+    }
+
+    .hero h1 {
+      color: var(--accent);
+      font-weight: 700
+    }
+
+    /* Section headings */
+    .section-title {
+      font-weight: 700;
+      color: #2b2b2b
+    }
+
+    .section-sub {
+      color: var(--muted)
+    }
+
+    /* Cards */
+    .feature-card {
+      border-radius: var(--card-radius);
+      background: white;
+      box-shadow: 0 8px 30px rgba(15, 15, 20, 0.04);
+    }
+
+    .class-badge {
+      background: linear-gradient(90deg, #fff6d8, #efe9ff);
+      color: var(--accent);
+      padding: .35rem .6rem;
+      border-radius: 10px;
+      font-weight: 600
+    }
+
+    /* Faculty */
+    .faculty .card {
+      border-radius: 12px;
+      overflow: hidden
+    }
+
+    /* Achievements */
+    .stat {
+      background: linear-gradient(90deg, rgba(108, 76, 227, 0.06), rgba(255, 246, 216, 0.06));
+      border-radius: 12px;
+      padding: 1rem
+    }
+
+    /* Testimonials */
+    .testimonial {
+      border-radius: 12px;
+      background: linear-gradient(180deg, #fff, #fbfbff);
+      padding: 1rem
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, var(--soft-purple), var(--soft-yellow));
+      color: #222
+    }
+
+    /* Responsive tweaks */
+    @media (min-width:992px) {
+      .hero {
+        padding: 3.5rem
+      }
+    }
+
+    /* small additional styles */
+    .btn-accent {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: .5rem .9rem
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+    
+    .body1 {
+      background-color: #fdfaf6;
+      font-family: "Poppins", sans-serif;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .accordion-button {
+      font-weight: 600;
+      background: #ffeaa7;
+      color: #2d3436;
+      border-radius: 10px !important;
+    }
+    .accordion-button:not(.collapsed) {
+      background: #fdcb6e;
+      color: #2d3436;
+    }
+    .accordion-body {
+      background: #fffbe6;
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2d3436;
+    }
+  
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg py-3 sticky-top shadow-sm" style="background:#fff;">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <div
+          style="width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff6d8,#efe9ff);">
+          <i class="bi bi-mortarboard-fill fs-4" style="color:#6c5ce7;"></i>
+        </div>
+        <div>
+          <div style="font-size:.95rem;color:#333">Vidyakul</div>
+          <strong style="font-size:.82rem">Coaching Classes</strong>
+        </div>
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="d-lg-none d-flex justify-content-between align-items-center px-3 mb-2">
+          <span class="fw-bold">Menu</span>
+          <!-- Close button -->
+          <button class="btn-close" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"></button>
+        </div>
+
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#founder">Founder</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Buttons side by side -->
+        <div class="ms-lg-3 mt-0 d-flex flex-wrap gap-2">
+          <a class="btn btn-accent" href="#classes">Enroll</a>
+          <a class="btn btn-outline-secondary" href="#contact">Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Auto-collapse on nav link click -->
+  <script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navMenu = document.querySelector('#navMenu');
+        if (navMenu.classList.contains('show')) {
+          new bootstrap.Collapse(navMenu).toggle();
+        }
+      });
+    });
+  </script>
+
+  <!-- HERO SECTION -->
+  <header id="home" class="position-relative overflow-hidden"
+    style="background: linear-gradient(135deg, #ede2ff, #fff7e0);">
+    <div class="container position-relative py-5">
+      <div class="row g-5 align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <small class="px-3 py-1 rounded-pill shadow-sm" style="background:#ede2ff; color:#6f42c1; font-weight:500;">
+            Classes 1st - 12th • All Boards
+          </small>
+          <h1 class="mt-3 fw-bold" style="font-size:2.7rem; line-height:1.3;">
+            Coaching You Can <span style="color:#6f42c1;">Trust</span>
+          </h1>
+          <p class="lead text-muted mt-3">
+            From basics to board exams — expert guidance, regular assessments, and personal care for every student.
+          </p>
+
+          <div class="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a class="btn btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#enrollModal"
+              style="background:#6f42c1; color:#fff; border-radius:12px; padding:0.75rem 1.5rem; box-shadow:0 4px 12px rgba(111,66,193,0.3);">
+              Free Demo
+            </a>
+            <a class="btn btn-lg btn-outline-dark" href="#classes" style="border-radius:12px; padding:0.75rem 1.5rem;">
+              View Classes
+            </a>
+          </div>
+
+          <div class="mt-4 small text-muted">
+            Flexible timings • Offline batches • Regular tests
+          </div>
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="col-lg-6 text-center">
+          <img src="./kids.webp" alt="Student studying illustration" class="img-fluid"
+            style="max-height:380px; position:relative; z-index:1;">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ENROLL MODAL -->
+  <div class="modal fade" id="enrollModal" tabindex="-1" aria-labelledby="enrollModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="enrollModalLabel" style="color:#6f42c1;">Quick Enrollment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="index.php" method="POST">
+            <div class="mb-3">
+              <input type="text" name="full_name" class="form-control form-control-lg rounded-3" placeholder="Full Name"
+                required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" name="phone" class="form-control form-control-lg rounded-3"
+                placeholder="Phone (10 digits)" pattern="[0-9]{10}" required>
+            </div>
+            <div class="mb-3">
+              <select name="class_selected" class="form-select form-select-lg rounded-3" required>
+                <option value="">Select Class</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+            </div>
+            <button class="btn w-100" type="submit"
+              style="background:#6f42c1; color:#fff; border-radius:12px; padding:0.75rem;">
+              Request Callback
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5" style="background: linear-gradient(135deg, #fffbe6, #f5f0ff);">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h3 class="section-title fw-bold text-dark mb-3">About <span style="color:#8e44ad;">Vidyakul</span></h3>
+          <p class="section-sub text-muted">
+            We nurture students from <b>1st to 12th (all boards)</b> with conceptual clarity, regular practice,
+            and personalised support to excel in academics.
+          </p>
+
+          <!-- Features -->
+          <div class="row g-3 mt-4">
+            <div class="col-6">
+              <div class="feature-card p-3 shadow-sm rounded-3 h-100 bg-white hover-card">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-people-fill text-warning fs-4 me-2"></i>
+                  <h6 class="mb-0">Small Batches</h6>
+                </div>
+                <p class="small text-muted mb-0">Individual attention with max 20 students.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-card p-3 shadow-sm rounded-3 h-100 bg-white hover-card">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-mortarboard-fill text-purple fs-4 me-2"></i>
+                  <h6 class="mb-0">Experienced Teachers</h6>
+                </div>
+                <p class="small text-muted mb-0">Qualified mentors for each subject & class.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-card p-3 shadow-sm rounded-3 h-100 bg-white hover-card">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-clipboard-check-fill text-success fs-4 me-2"></i>
+                  <h6 class="mb-0">Regular Assessments</h6>
+                </div>
+                <p class="small text-muted mb-0">Weekly tests, monthly reports & remedial sessions.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-card p-3 shadow-sm rounded-3 h-100 bg-white hover-card">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-clock-fill text-danger fs-4 me-2"></i>
+                  <h6 class="mb-0">Flexible Timings</h6>
+                </div>
+                <p class="small text-muted mb-0">Morning, evening and weekend batches.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="col-lg-6 text-center">
+          <div id="aboutCarousel" class="carousel slide rounded-4 shadow-lg overflow-hidden" data-bs-ride="carousel"
+            data-bs-interval="3000"> <!-- Auto-play every 3s -->
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./well.jpeg" class="d-block w-100" alt="students 1"
+                  style="object-fit:cover; max-height:400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="./adventure.jpeg" class="d-block w-100" alt="students 2"
+                  style="object-fit:cover; max-height:400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="./well.jpeg" class="d-block w-100" alt="students 3"
+                  style="object-fit:cover; max-height:400px;">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+  </section>
+  <!-- Custom Hover Effect -->
+  <style>
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .text-purple {
+      color: #8e44ad;
+    }
+  </style>
+
+
+  <!-- CLASSES -->
+  <section id="classes" class="py-5" style="background: #fdfdfd;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-column flex-md-row">
+        <div class="mb-3 mb-md-0">
+          <h3 class="section-title fw-bold text-dark mb-2">Our Classes (1 — 12)</h3>
+          <p class="muted">Structured programs for every stage — foundation, concept building, exam preparation.</p>
+        </div>
+        <div>
+          <a class="btn btn-accent fw-bold" href="#enroll" data-bs-toggle="modal" data-bs-target="#enrollModal"
+            style="background: linear-gradient(90deg,#6c4ce3,#9b59b6); border:none; box-shadow:0 6px 12px rgba(108,76,227,0.3);">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Primary -->
+        <div class="col-md-6 col-lg-3">
+          <div class="p-3 feature-card h-100 d-flex flex-column text-center scroll-animate"
+            style="background: linear-gradient(145deg, #fff9e6, #fff3cc); transition: all 0.7s ease-out;">
+            <h5 class="fw-bold mb-2">Primary (Class 1 — 5)</h5>
+            <p class="small muted mb-3">Foundational literacy & numeracy, activity-based learning, value education.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="fw-bold text-purple">₹500-₹1000 / mo</div>
+              <a href="#enroll" class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#enrollModal"
+                style="background:#6c4ce3;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle -->
+        <div class="col-md-6 col-lg-3">
+          <div class="p-3 feature-card h-100 d-flex flex-column text-center scroll-animate"
+            style="background: linear-gradient(145deg, #f1ebff, #e6dcff); transition: all 0.7s ease-out;">
+            <h5 class="fw-bold mb-2">Middle (Class 6 — 8)</h5>
+            <p class="small muted mb-3">Concept clarity, strengthen basics, small tests & project work.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="fw-bold text-purple">₹1,000-₹1,500 / mo</div>
+              <a href="#enroll" class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#enrollModal"
+                style="background:#8e44ad;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="col-md-6 col-lg-3">
+          <div class="p-3 feature-card h-100 d-flex flex-column text-center scroll-animate"
+            style="background: linear-gradient(145deg, #fff3e6, #ffe6cc); transition: all 0.7s ease-out;">
+            <h5 class="fw-bold mb-2">High School (Class 9 — 10)</h5>
+            <p class="small muted mb-3">Exam strategy, NCERT focus, practice tests & doubt clearing.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="fw-bold text-purple">₹15,500 / yr</div>
+              <a href="#enroll" class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#enrollModal"
+                style="background:#9b59b6;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Senior Secondary -->
+        <div class="col-md-6 col-lg-3">
+          <div class="p-3 feature-card h-100 d-flex flex-column text-center scroll-animate"
+            style="background: linear-gradient(145deg, #e6fff9, #ccf9f0); transition: all 0.7s ease-out;">
+            <h5 class="fw-bold mb-2">Senior Secondary (11 — 12)</h5>
+            <p class="small muted mb-3">Board preparation, subject-wise coaching (Science/Commerce/Arts), test series.
+            </p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="fw-bold text-purple">₹25,500 / yr</div>
+              <a href="#enroll" class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#enrollModal"
+                style="background:#1abc9c;">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    .scroll-animate.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 1.7s ease-out;
+    }
+  </style>
+
+  <script>
+    // Staggered animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const children = entry.target.querySelectorAll('.scroll-animate');
+          children.forEach((el, i) => {
+            setTimeout(() => el.classList.add('show'), i * 250); // stagger by 150ms
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    // Observe each row
+    document.querySelectorAll('.row.g-4').forEach(row => observer.observe(row));
+  </script>
+
+
+  <!-- FOUNDER -->
+  <section id="founder" class="py-5" style="background: #f9f7ff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="section-title">Message from Our Founder</h3>
+        <p class="muted">Inspiring guidance and vision behind Vidyakul Coaching Classes.</p>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <!-- Founder Image -->
+        <div class="col-lg-4 text-center">
+          <div class="feature-card p-3 scroll-animate"
+            style="background: linear-gradient(145deg,#fff9e6,#fff3cc); border-radius:18px; transition: all 0.8s ease-out;">
+            <img src="./gaurav-thakre.jpeg" class="rounded-circle mx-auto"
+              style="width:160px; height:160px; object-fit:cover; border:4px solid #6C4CE3;">
+            <h4 class="mt-3 fw-bold">Gaurav Thakre</h4>
+            <div class="small muted">Founder & Head Mentor</div>
+          </div>
+        </div>
+
+        <!-- Founder Message -->
+        <div class="col-lg-8 scroll-animate" style="transition: all 0.8s ease-out;">
+          <div class="feature-card p-4"
+            style="border-radius:18px; background: linear-gradient(145deg,#f1ebff,#e6dcff); box-shadow:0 8px 25px rgba(108,76,227,0.1);">
+            <p class="lead text-dark fst-italic">
+              "At Vidyakul Coaching, our mission is to nurture every student from foundation to excellence.
+              We focus on individual attention, conceptual clarity, and building confidence for every learner.
+              Education is not just about marks, but about igniting curiosity and lifelong learning."
+            </p>
+            <div class="mt-3 text-end">
+              <strong class="text-purple">— Gaurav Thakre</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Scroll animation */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .scroll-animate.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s ease-out;
+    }
+
+    @media(max-width:992px) {
+      .text-end {
+        text-align: left !important;
+      }
+    }
+  </style>
+
+  <script>
+    // Scroll-triggered animation
+    const founderObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          founderObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('#founder .scroll-animate').forEach(el => founderObserver.observe(el));
+  </script>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="py-5" style="background:#fff9e6;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="section-title">Achievements & Results</h3>
+        <p class="muted">Proud moments — board toppers, consistent score improvements, and success stories.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Stat Card 1 -->
+        <div class="col-md-4">
+          <div class="stat-card p-4 text-center scroll-animate"
+            style="border-radius:16px; background: linear-gradient(135deg,#fff6d8,#fff3cc); box-shadow:0 8px 25px rgba(108,76,227,0.08); transition: all 0.8s ease-out;">
+            <h2 class="display-5 text-accent counter" data-target="92">0</h2>
+            <p class="fw-bold">Average Pass Rate</p>
+            <i class="bi bi-graph-up-arrow fs-2 text-purple"></i>
+          </div>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="col-md-4">
+          <div class="stat-card p-4 text-center scroll-animate"
+            style="border-radius:16px; background: linear-gradient(135deg,#f1ebff,#e6dcff); box-shadow:0 8px 25px rgba(108,76,227,0.08); transition: all 0.8s ease-out;">
+            <h2 class="display-5 text-accent counter" data-target="150">0</h2>
+            <p class="fw-bold">Students Improved Scores Last Year</p>
+            <i class="bi bi-star-fill fs-2 text-purple"></i>
+          </div>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="col-md-4">
+          <div class="stat-card p-4 text-center scroll-animate"
+            style="border-radius:16px; background: linear-gradient(135deg,#fff0f6,#ffe6f0); box-shadow:0 8px 25px rgba(108,76,227,0.08); transition: all 0.8s ease-out;">
+            <h2 class="display-5 text-accent counter" data-target="30">0</h2>
+            <p class="fw-bold">Topper Ranks Across Boards</p>
+            <i class="bi bi-trophy-fill fs-2 text-purple"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Highlights -->
+      <div class="row mt-5 g-4">
+        <div class="col-md-4">
+          <div class="feature-card p-3 scroll-animate"
+            style="border-radius:16px; background:#fff; box-shadow:0 6px 18px rgba(108,76,227,0.06);">
+            <h6>Consistent Improvement</h6>
+            <p class="small muted">90%+ of students improve marks year-on-year.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-3 scroll-animate"
+            style="border-radius:16px; background:#fff; box-shadow:0 6px 18px rgba(108,76,227,0.06);">
+            <h6>Board Toppers</h6>
+            <p class="small muted">Celebrating 10+ toppers in state & national boards.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-3 scroll-animate"
+            style="border-radius:16px; background:#fff; box-shadow:0 6px 18px rgba(108,76,227,0.06);">
+            <h6>Scholarship Awards</h6>
+            <p class="small muted">Merit-based awards for academic excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .text-accent {
+      color: #6C4CE3;
+    }
+
+    .text-purple {
+      color: #6C4CE3;
+    }
+
+    /* Scroll animation */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .scroll-animate.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s ease-out;
+    }
+
+    @media(max-width:768px) {
+      .display-5 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Scroll animation for stat cards and feature cards
+    const statObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          statObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.scroll-animate').forEach(el => statObserver.observe(el));
+
+    // Count-up animation for numbers
+    function animateCounters() {
+      document.querySelectorAll('.counter').forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const increment = target / 100;
+        const interval = setInterval(() => {
+          count += increment;
+          if (count >= target) { counter.innerText = target; clearInterval(interval); }
+          else counter.innerText = Math.floor(count);
+        }, 20);
+      });
+    }
+
+    // Trigger count-up when section visible
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          counterObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    counterObserver.observe(document.querySelector('#achievements'));
+  </script>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5" style="background:#faf7ff;"> <!-- light purple background -->
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="section-title fw-bold" style="color:#6f42c1;">What Parents & Students Say</h3>
+        <p class="text-muted">Real experiences from families we've helped.</p>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+
+          <!-- First Row -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-md-4">
+                <div class="testimonial-card p-4 h-100"
+                  style="background:#ffffff; border-left:6px solid #6f42c1; border-radius:16px; box-shadow:0 6px 20px rgba(111,66,193,0.1);">
+                  <p style="font-size:1.1rem; line-height:1.6; color:#333;">"Excellent teaching approach for my daughter
+                    in classes."</p>
+                  <div class="mt-3 fw-bold" style="color:#6f42c1;">Sunita M. - Parent</div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card p-4 h-100"
+                  style="background:#fffbea; border-left:6px solid #f4c542; border-radius:16px; box-shadow:0 6px 20px rgba(244,197,66,0.15);">
+                  <p style="font-size:1.1rem; line-height:1.6; color:#333;">"Improved 60 marks in boards after joining
+                    Vidyakul. Do recommend!"</p>
+                  <div class="mt-3 fw-bold" style="color:#c49102;">Aman K. - Student (Class 10)</div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card p-4 h-100"
+                  style="background:#ffffff; border-left:6px solid #b07dff; border-radius:16px; box-shadow:0 6px 20px rgba(176,125,255,0.15);">
+                  <p style="font-size:1.1rem; line-height:1.6; color:#333;">"Great mentors & flexible timings for
+                    working parents."</p>
+                  <div class="mt-3 fw-bold" style="color:#8540f5;">Priya S. - Parent</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+
+              <div class="col-md-4">
+                <div class="testimonial-card p-4 h-100"
+                  style="background:#fffbea; border-left:6px solid #f4c542; border-radius:16px; box-shadow:0 6px 20px rgba(244,197,66,0.15);">
+                  <p style="font-size:1.1rem; line-height:1.6; color:#333;">"Personalized attention and regular feedback
+                    helped my son a lot."</p>
+                  <div class="mt-3 fw-bold" style="color:#c49102;">Rohit S. - Parent</div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card p-4 h-100"
+                  style="background:#ffffff; border-left:6px solid #6f42c1; border-radius:16px; box-shadow:0 6px 20px rgba(111,66,193,0.1);">
+                  <p style="font-size:1.1rem; line-height:1.6; color:#333;">"The structured syllabus and engaging
+                    teachers made learning fun."</p>
+                  <div class="mt-3 fw-bold" style="color:#6f42c1;">Anjali P. - Student (Class 12)</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CONTACT / ENROLL -->
+  <section id="contact" class="py-5" style="background:#fdfcf8;">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Enquiry Form -->
+        <div class="col-lg-6 d-flex">
+          <div class="card border-0 shadow-lg rounded-4 w-100 h-100 animate__animated animate__fadeInLeft"
+            style="background:#f8f5ff;">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class=".body1">
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+            What is this website about?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            This website is about Vidyakul Coaching and helps you explore various services and submit your queries easily.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            How can I contact support?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can reach out to us via our contact form or email at <strong>joshianji2005@gmail.com</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+            How long does it take to receive a response?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We usually respond within 24–48 hours of receiving your enquiry.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+            What are the timmings of Classes?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+          Class timings are mainly in the morning from 7 to 9 and in the evening from 4 to 9.
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Location -->
+        <div class="col-lg-6 d-flex">
+          <div class="card border-0 shadow-lg rounded-4 w-100 h-100 animate__animated animate__fadeInRight"
+            style="background:#fffaf0;">
+            <div class="card-body p-4 d-flex flex-column">
+              <h3 class="mb-4 fw-bold" style="color:#fdcb6e;">📍 Contact & Location</h3>
+
+              <p class="mb-3 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-2 fs-5" style="color:#6c5ce7;"></i>
+                <a href="tel:+919022787706" class="text-dark text-decoration-none">+91 9022787706</a>
+              </p>
+
+              <p class="mb-3 d-flex align-items-center">
+                <i class="bi bi-envelope-fill me-2 fs-5" style="color:#d63031;"></i>
+                <a href="mailto:joshianji2005@gmail.com" class="text-dark text-decoration-none">
+                  joshianji2005@gmail.com
+                </a>
+              </p>
+
+              <p class="d-flex align-items-start flex-grow-0">
+                <i class="bi bi-geo-alt-fill me-2 fs-5" style="color:#fdcb6e;"></i>
+                <span>Jagruti Colony, near Unique Medical Store, Friends Colony, Nagpur</span>
+              </p>
+
+              <!-- Map (takes remaining space) -->
+              <div class="mt-auto rounded-4 overflow-hidden shadow-sm" style="border:3px solid #ffeaa7;">
+                <iframe style="border:0; width:100%; height:250px;" loading="lazy" allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019713290705!2d144.96305831531762!3d-37.81361197975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f1f1f1%3A0x5045675218ceed0!2sYour%20Location!5e0!3m2!1sen!2sin!4v1691500000000">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h5>Vidyakul Coaching</h5>
+          <small class="text-muted">Copyright © 2025 Vidyakul Coaching. All rights reserved.</small>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="me-3 text-decoration-none" href="#">Privacy</a>
+          <a class="me-3 text-decoration-none" href="#">Terms</a>
+          <a class="text-decoration-none" href="#">Careers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Form validation (both forms)
+    (function () {
+      function setupForm(id) {
+        const form = document.getElementById(id);
+        if (!form) return;
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.classList.add('was-validated'); return; }
+          const btn = form.querySelector('button[type="submit"]');
+          const old = btn.innerText; btn.disabled = true; btn.innerText = 'Sending...';
+          setTimeout(() => {
+            btn.disabled = false; btn.innerText = old; form.reset(); form.classList.remove('was-validated');
+            const alert = document.createElement('div'); alert.className = 'alert alert-success mt-3'; alert.innerText = 'Thank you! We will contact you soon.'; form.prepend(alert);
+            setTimeout(() => alert.remove(), 5000);
+          }, 1100);
+        })
+      }
+      setupForm('quickForm'); setupForm('enrollForm');
+    })();
+
+    // Smooth scroll for nav
+    document.querySelectorAll('a.nav-link[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    });
+  </script>
+</body>
+
+</html>
